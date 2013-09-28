@@ -4,6 +4,7 @@ package EJ.Blocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import EJ.Items.Items;
+import EJ.tileentities.TileEntityDeployer;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -36,6 +37,9 @@ public class Blocks {
 	public static Block darkdirt;
 	public static Block rubyTorch;
 	//public static Block chest;
+	public static Block DualFurnace;
+	public static Block DualFurnaceActive;
+	public static Block deployer;
 
 
 	
@@ -58,7 +62,9 @@ public class Blocks {
 		//Machine = new BlockMachine(BlockInfo.MACHINE_ID);
 		darkgrass = new darkgrass(BlockInfo.blackgrass_ID);
 		darkdirt = new darkdirt(BlockInfo.blackdirt_ID);
-		//chest = new BlockChest(BlockInfo.chest_ID);
+		//DualFurnace = new dualfurnace(BlockInfo.furnace_ID);
+		//DualFurnaceActive = new dualfurnace(BlockInfo.furnace_ID);
+		deployer = new deployer(BlockInfo.deployer_ID);
 
 		
 
@@ -78,6 +84,7 @@ public class Blocks {
 		GameRegistry.registerBlock(darkdirt, "darkdirt");
 		GameRegistry.registerBlock(darkgrass, "darkgrass");
 		//GameRegistry.registerBlock(chest, "Chest");
+		GameRegistry.registerBlock(deployer, "deployer");
 		
 
 		
@@ -114,7 +121,7 @@ public class Blocks {
 		LanguageRegistry.addName(zaniteBlock, BlockInfo.zaniteBlock_NAME);
 		LanguageRegistry.addName(zaniteOre, BlockInfo.zaniteOre_NAME);
 		LanguageRegistry.addName(aluminite, BlockInfo.aluminite_NAME);
-		//LanguageRegistry.addName(Machine, BlockInfo.MACHINE_NAME);
+		LanguageRegistry.addName(deployer, BlockInfo.deployer_NAME);
 		LanguageRegistry.addName(darkgrass, BlockInfo.blackgrass_NAME);
 		LanguageRegistry.addName(darkdirt, BlockInfo.blackdirt_NAME);
 	
@@ -126,6 +133,7 @@ public class Blocks {
 		
 		//GameRegistry.registerTileEntity(TileEntityMachine.class, BlockInfo.MACHINE_TE_KEY);
 		//GameRegistry.registerTileEntity(TileEntityChest.class, BlockInfo.chest_TE_KEY);
+		GameRegistry.registerTileEntity(TileEntityDeployer.class, "DeployerEJ");
 		
 		
 	}

@@ -4,6 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import EJ.tileentities.TileEntityChest;
+import EJ.tileentities.TileEntityDeployer;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 
@@ -22,35 +23,26 @@ public class GuiHandler implements IGuiHandler {
 	public GuiHandler() {
 		NetworkRegistry.instance().registerGuiHandler(EJ.core.EJ.instance, this);
 	}
-	
+
 	@Override
-	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		switch (ID) {
-			case 0:
-				TileEntity te = world.getBlockTileEntity(x, y, z);
-				if (te != null && te instanceof TileEntityChest) {
-					return new ContainerChest(player.inventory, (TileEntityChest)te);
-				}
-				break;
-		}
+	public Object getServerGuiElement(int id, EntityPlayer player, World world,
+			int x, int y, int z) {
+		TileEntity entity = world.getBlockTileEntity(x, y, z);
 		
-		return null;
-	}
+		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new ContainerDeployer(player.inventory, (TileEntityDeployer) entity);} else {return null;}default:return null;}}
+	
+		
+		
+	
 
 	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		switch (ID) {
-			case 0:
-				TileEntity te = world.getBlockTileEntity(x, y, z);
-				if (te != null && te instanceof TileEntityChest) {
-					return new GuiChest(player.inventory, (TileEntityChest)te);
-				}
-			
-				break;
-		}
+	public Object getClientGuiElement(int id, EntityPlayer player, World world,
+			int x, int y, int z) {
+		TileEntity entity = world.getBlockTileEntity(x, y, z);
+		
+		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new GuiDeployer(player.inventory, (TileEntityDeployer) entity);} else {return null;}default:return null;}}}
+	
+		
+	
 
-
-		return null;
-	}
-
-}
+	

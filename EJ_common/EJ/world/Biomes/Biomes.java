@@ -19,7 +19,7 @@ public class Biomes {
 	
 	public static void init() {
 		//Biomes
-	    darkwoods = (new Darkwoods(BiomeInfo.darkwoods_DEFAULT).setBiomeName("Dark Woods").setMinMaxHeight(-0.2F,0.2F).setTemperatureRainfall(0.8F, 0.9F));
+	    darkwoods = (new Darkwoods(24).setBiomeName("Dark Woods").setMinMaxHeight(-0.2F,0.2F).setTemperatureRainfall(0.8F, 0.9F));
 	    GameRegistry.addBiome(darkwoods);
 
 	}

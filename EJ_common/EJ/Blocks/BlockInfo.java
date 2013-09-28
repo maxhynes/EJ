@@ -147,16 +147,25 @@ public class BlockInfo {
 	
 	public static final String BlockemeraldFluid_SIDE = "BlockemeraldFluid";
 	
-	public static int chest_ID;
-	public static final String chest_KEY = "chest";
-	public static final int chest_DEFAULT = 514;
+	public static int furnace_ID;
+	public static final String furnace_KEY = "furnace";
+	public static final int furnace_DEFAULT = 514;
 	
-	public static final String chest_UNLOCALIZED_NAME = "chest";
-	public static final String chest_NAME = "chest";
+	public static final String furnace_UNLOCALIZED_NAME = "furnace";
+	public static final String furnace_NAME = "Dual Furnace";
 	
-	public static final String chest_SIDE = "chest";
+	public static final String furnace_SIDE = "furnace";
 	
-	public static final String chest_TE_KEY = "TileEntityChest";
+	public static int deployer_ID;
+	public static final String deployer_KEY = "deployer";
+	public static final int deployer_DEFAULT = 515;
+	
+	public static final String deployer_UNLOCALIZED_NAME = "deployer";
+	public static final String deployer_NAME = "Deployer";
+	
+	public static final String deployer_SIDE = "deployer";
+	
+
 	
 
 	

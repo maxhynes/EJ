@@ -11,6 +11,7 @@ import EJ.Blocks.Blocks;
 import EJ.Fluids.Fluids;
 import EJ.Items.Items;
 import EJ.Network.PacketHandler;
+import EJ.client.interfaces.GuiHandler;
 import EJ.config.ConfigHandler;
 import EJ.entity.Entities;
 import EJ.entity.WitherSpider;
@@ -63,6 +64,7 @@ public class EJ {
     
     
     public static CreativeTabs tabEJ = new EJCreativeTab(CreativeTabs.getNextID(), "Explorer's Journey");
+   
     
     
     
@@ -121,6 +123,7 @@ public class EJ {
 		Items.registerRecipes();
 		Blocks.registerRecipes();
 		new GenerationHandler();
+		new GuiHandler();
 		Blocks.registerTileEntities();
 		
 		

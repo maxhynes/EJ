@@ -15,25 +15,23 @@ import net.minecraft.creativetab.CreativeTabs;
  * 
  */
 
-public final class EJCreativeTab extends CreativeTabs
-{
-	public EJCreativeTab(int par1, String par2Str)
-{
-		super(par1, par2Str);}
+public final class EJCreativeTab extends CreativeTabs {        
+	public EJCreativeTab(int par1, String par2Str) {                
+		super(par1, par2Str);        
+		}        
+	
+	@SideOnly(Side.CLIENT)        
+	public int getTabIconItemIndex()        
+	{        
+		return Items.zaniteGem.itemID;//items       
+	}
+		
+		public String getTranslatedTabLabel()        
+		{        
+			return "Explorer's Journey";             
+		}
+	}
 
-
-@SideOnly(Side.CLIENT)
-public int getTabIconItemIndex()
-{
-	return Items.zaniteGem.itemID;
-}
-
-
-public String getTranslatedLabel()
-{
-	return "Explorer's Journey";
-}
-}
 
 
 

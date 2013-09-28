@@ -21,6 +21,10 @@ public class Darkwoods extends BiomeGenBase
         this.topBlock = (byte)Blocks.darkgrass.blockID;
         this.fillerBlock = (byte)Blocks.darkdirt.blockID;
         
+        this.theBiomeDecorator.treesPerChunk = 5;
+        this.theBiomeDecorator.grassPerChunk = 10;
+        
+        
     }
 }
 
