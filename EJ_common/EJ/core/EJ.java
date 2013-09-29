@@ -84,14 +84,14 @@ public class EJ {
 		Entities.init();
 		Fluids.init();
 		MinecraftForge.EVENT_BUS.register(new EJBucketHandler());
-		//Biomes.init();
+		//Biomes.init(); --Biome Gen Broken :(
 
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.opalGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.zaniteGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.rubyGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.topazGem),1,3,065));
         
-        DevCapesUtil.getInstance().addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt");
+        DevCapesUtil.getInstance().addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt"); // hooks into cape api
 
 
 		
@@ -117,14 +117,14 @@ public class EJ {
 		MinecraftForge.setBlockHarvestLevel(Blocks.topazOre, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(Blocks.opalOre, "pickaxe", 2); 
 		MinecraftForge.setBlockHarvestLevel(Blocks.zaniteOre, "pickaxe", 3);
-		Items.addNames();
-		Blocks.addNames();
+		Items.addNames(); // Adds Item Names
+		Blocks.addNames(); // Adds Block Names
 		
-		Items.registerRecipes();
-		Blocks.registerRecipes();
-		new GenerationHandler();
-		new GuiHandler();
-		Blocks.registerTileEntities();
+		Items.registerRecipes(); // Adds Item Recipes
+		Blocks.registerRecipes(); // Adds Block Recipes
+		new GenerationHandler(); // Activates Generation Handler
+		new GuiHandler();// Activates GUI Handler
+		Blocks.registerTileEntities(); // Registers tile entities
 		
 		
 		
@@ -133,8 +133,8 @@ public class EJ {
 		proxy.registerServerTickHandler();
 		
 		
-		EntityRegistry.addSpawn(WitherSpider.class, 25, 1, 2, EnumCreatureType.monster, BiomeGenBase.hell); 
-		//LanguageRegistry.addName(tabEJ, "Explorer's Journey");
+		EntityRegistry.addSpawn(WitherSpider.class, 25, 1, 2, EnumCreatureType.monster, BiomeGenBase.hell); //Adds which biome spider can spawn in
+		
 		
 		
 	
