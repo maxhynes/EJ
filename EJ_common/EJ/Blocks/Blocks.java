@@ -58,7 +58,6 @@ public class Blocks {
 		zaniteBlock = new zaniteBlock(BlockInfo.zaniteBlock_ID);
 		zaniteOre = new zaniteOre(BlockInfo.zaniteOre_ID);
 		aluminite = new aluminite(BlockInfo.aluminite_ID);
-		//Machine = new BlockMachine(BlockInfo.MACHINE_ID);
 		darkgrass = new darkgrass(BlockInfo.blackgrass_ID);
 		darkdirt = new darkdirt(BlockInfo.blackdirt_ID);
 		//DualFurnace = new dualfurnace(BlockInfo.furnace_ID);
@@ -79,7 +78,6 @@ public class Blocks {
 		GameRegistry.registerBlock(zaniteBlock, "zaniteBlock");
 		GameRegistry.registerBlock(zaniteOre, "zaniteOre");
 		GameRegistry.registerBlock(aluminite, "aluminite");
-		//GameRegistry.registerBlock(Machine, "Machine");
 		GameRegistry.registerBlock(darkdirt, "darkdirt");
 		GameRegistry.registerBlock(darkgrass, "darkgrass");
 		//GameRegistry.registerBlock(chest, "Chest");
