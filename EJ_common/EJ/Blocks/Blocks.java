@@ -36,7 +36,6 @@ public class Blocks {
 	public static Block darkgrass;
 	public static Block darkdirt;
 	public static Block rubyTorch;
-	//public static Block chest;
 	public static Block DualFurnace;
 	public static Block DualFurnaceActive;
 	public static Block deployer;
@@ -131,8 +130,7 @@ public class Blocks {
 	
 	public static void registerTileEntities() {
 		
-		//GameRegistry.registerTileEntity(TileEntityMachine.class, BlockInfo.MACHINE_TE_KEY);
-		//GameRegistry.registerTileEntity(TileEntityChest.class, BlockInfo.chest_TE_KEY);
+	
 		GameRegistry.registerTileEntity(TileEntityDeployer.class, "DeployerEJ");
 		
 		
