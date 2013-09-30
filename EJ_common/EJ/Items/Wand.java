@@ -1,4 +1,4 @@
-package EJ.Items;
+/**package EJ.Items;
 
 import java.util.List;
 
@@ -20,6 +20,7 @@ import cpw.mods.fml.relauncher.SideOnly;
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  * 
  */
+/**
 
 public class Wand extends Item {
 
@@ -70,5 +71,6 @@ public class Wand extends Item {
 	
 	
 }
+**/
 	
 

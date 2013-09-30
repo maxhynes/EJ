@@ -1,6 +1,10 @@
 package EJ.Fluids;
+import EJ.Items.ItemInfo;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,7 +30,8 @@ public class emeraldFluidBucket extends ItemFluidContainer{
 	 int isFull;
 	 public emeraldFluidBucket(int id){
 		 super(id);
-		 func_111206_d("ej:bucketEmerald");
+		 //func_111206_d("ej:bucketEmerald");
+		 this.setTextureName("ej:bucketEmerald");
 		 isFull = 2000;
 		 setCreativeTab(EJ.core.EJ.tabEJ);
 	 }
@@ -163,5 +168,11 @@ public class emeraldFluidBucket extends ItemFluidContainer{
                 return true;
             }
         }
+        }
+		 @Override
+			@SideOnly(Side.CLIENT)
+			public void registerIcons(IconRegister register) {
+				itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.emeraldBucket_ICON);
 	 }
+	 
 }

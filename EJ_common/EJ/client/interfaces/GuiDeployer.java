@@ -25,11 +25,17 @@ public class GuiDeployer extends GuiContainer {
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) {
 		GL11.glColor4f(1, 1, 1, 1);
 		
-		Minecraft.getMinecraft().func_110434_K().func_110577_a(texture);
-		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
+		this.mc.getTextureManager().bindTexture(texture);
+        int k = (this.width - this.xSize) / 2;
+        int l = (this.height - this.ySize) / 2;
+        this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
+
 		
-		Minecraft.getMinecraft().func_110434_K().func_110577_a(texture);
-		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
+		//Minecraft.getMinecraft().func_110434_K().func_110577_a(texture);
+		//drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
+		
+		//Minecraft.getMinecraft().func_110434_K().func_110577_a(texture);
+		//drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 	}
 
 }

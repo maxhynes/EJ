@@ -431,7 +431,7 @@ public class ItemInfo {
 	public static final int emeraldBucket_DEFAULT = 1045;
 
 	public static final String emeraldBucket_UNLOCALIZED_NAME = "emeraldBucket";
-	public static final String emeraldBucket_NAME = "emeraldBucket";
+	public static final String emeraldBucket_NAME = "Emerald Bucket";
 
 	public static final String emeraldBucket_ICON = "emeraldBucket";
 	

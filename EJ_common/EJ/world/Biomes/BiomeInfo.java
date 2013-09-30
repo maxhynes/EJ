@@ -14,7 +14,7 @@ public class BiomeInfo {
 	
 	public static int darkwoods_ID;
 	public static final String darkwoods_KEY = "darkwoods";
-	public static final int darkwoods_DEFAULT = 300;
+	public static final int darkwoods_DEFAULT = 25;
 	
 	public static final String darkwoods_NAME = "Dark Woods";
 

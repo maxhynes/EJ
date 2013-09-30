@@ -18,8 +18,7 @@ import EJ.entity.WitherSpider;
 import EJ.lib.Reference;
 import EJ.proxy.CommonProxy;
 import EJ.world.GenerationHandler;
-
-import com.jadarstudios.developercapes.DevCapesUtil;
+//import com.jadarstudios.developercapes.DevCapesUtil;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -84,14 +83,14 @@ public class EJ {
 		Entities.init();
 		Fluids.init();
 		MinecraftForge.EVENT_BUS.register(new EJBucketHandler());
-		//Biomes.init(); --Biome Gen Broken :(
+		//Biomes.init(); //--Biome Gen Broken :(
 
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.opalGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.zaniteGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.rubyGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.topazGem),1,3,065));
         
-        DevCapesUtil.getInstance().addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt"); // hooks into cape api
+        //DevCapesUtil.getInstance().addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt"); // hooks into cape api
 
 
 		
