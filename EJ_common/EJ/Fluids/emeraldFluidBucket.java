@@ -31,7 +31,7 @@ public class emeraldFluidBucket extends ItemFluidContainer{
 	 public emeraldFluidBucket(int id){
 		 super(id);
 		 //func_111206_d("ej:bucketEmerald");
-		 this.setTextureName("ej:bucketEmerald");
+		 setTextureName("ej:bucketEmerald");
 		 isFull = 2000;
 		 setCreativeTab(EJ.core.EJ.tabEJ);
 	 }

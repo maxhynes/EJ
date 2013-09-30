@@ -1,5 +1,7 @@
 package EJ.core;
 
+import com.jadarstudios.developercapes.DevCapesUtil;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.item.ItemStack;
@@ -90,7 +92,7 @@ public class EJ {
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.rubyGem),1,3,065));
         ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(Items.topazGem),1,3,065));
         
-        //DevCapesUtil.getInstance().addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt"); // hooks into cape api
+        DevCapesUtil.addFileUrl("https://dl.dropboxusercontent.com/u/184750575/capes.txt"); // hooks into cape api
 
 
 		
