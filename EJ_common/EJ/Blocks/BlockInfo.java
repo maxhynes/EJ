@@ -147,18 +147,28 @@ public class BlockInfo {
 	
 	public static final String BlockemeraldFluid_SIDE = "BlockemeraldFluid";
 	
-	public static int furnace_ID;
-	public static final String furnace_KEY = "furnace";
-	public static final int furnace_DEFAULT = 514;
+	public static int furnaceIdle_ID;
+	public static final String furnaceIdle_KEY = "furnace";
+	public static final int furnaceIdle_DEFAULT = 514;
 	
-	public static final String furnace_UNLOCALIZED_NAME = "furnace";
-	public static final String furnace_NAME = "Dual Furnace";
+	public static final String furnaceIdle_UNLOCALIZED_NAME = "furnaceIdle";
+	public static final String furnaceIdle_NAME = "Furnace";
 	
-	public static final String furnace_SIDE = "furnace";
+	public static final String furnaceIdle_SIDE = "furnaceIdle";
+	
+	public static int furnaceActive_ID;
+	public static final String furnaceActive_KEY = "furnace";
+	public static final int furnaceActive_DEFAULT = 515;
+	
+	public static final String furnaceActive_UNLOCALIZED_NAME = "furnaceActive";
+	public static final String furnaceActive_NAME = "Furnace Active";
+	
+	public static final String furnaceActive_SIDE = "furnaceSide";
+	public static final String furnaceActive_FRONT = "furnaceActive";
 	
 	public static int deployer_ID;
 	public static final String deployer_KEY = "deployer";
-	public static final int deployer_DEFAULT = 515;
+	public static final int deployer_DEFAULT = 516;
 	
 	public static final String deployer_UNLOCALIZED_NAME = "deployer";
 	public static final String deployer_NAME = "Deployer";

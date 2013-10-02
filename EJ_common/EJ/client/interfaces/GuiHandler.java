@@ -3,7 +3,6 @@ package EJ.client.interfaces;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-import EJ.tileentities.TileEntityChest;
 import EJ.tileentities.TileEntityDeployer;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
@@ -29,7 +28,13 @@ public class GuiHandler implements IGuiHandler {
 			int x, int y, int z) {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 		
-		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new ContainerDeployer(player.inventory, (TileEntityDeployer) entity);} else {return null;}default:return null;}}
+		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new ContainerDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}default:return null;}}
+	
+	    
+		
+		
+		
+		
 	
 		
 		
@@ -40,7 +45,14 @@ public class GuiHandler implements IGuiHandler {
 			int x, int y, int z) {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 		
-		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new GuiDeployer(player.inventory, (TileEntityDeployer) entity);} else {return null;}default:return null;}}}
+		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new GuiDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}default:return null;}}}
+		
+
+	
+
+
+
+	
 	
 		
 	

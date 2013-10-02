@@ -36,9 +36,9 @@ public class Blocks {
 	public static Block darkgrass;
 	public static Block darkdirt;
 	public static Block rubyTorch;
-	public static Block DualFurnace;
-	public static Block DualFurnaceActive;
 	public static Block deployer;
+	public static Block furnaceIdle;
+	public static Block furnaceActive;
 
 
 	
@@ -60,10 +60,10 @@ public class Blocks {
 		aluminite = new aluminite(BlockInfo.aluminite_ID);
 		darkgrass = new darkgrass(BlockInfo.blackgrass_ID);
 		darkdirt = new darkdirt(BlockInfo.blackdirt_ID);
-		//DualFurnace = new dualfurnace(BlockInfo.furnace_ID);
-		//DualFurnaceActive = new dualfurnace(BlockInfo.furnace_ID);
 		deployer = new deployer(BlockInfo.deployer_ID);
-
+		furnaceIdle = new furnace(BlockInfo.furnaceIdle_ID, false).setUnlocalizedName("furnaceIdle").setCreativeTab(EJ.core.EJ.tabEJ);
+		furnaceActive = new furnace(BlockInfo.furnaceActive_ID, true).setUnlocalizedName("furnaceActive").setLightValue(1.0F).setCreativeTab(EJ.core.EJ.tabEJ);
+		
 		
 
 		
@@ -80,8 +80,9 @@ public class Blocks {
 		GameRegistry.registerBlock(aluminite, "aluminite");
 		GameRegistry.registerBlock(darkdirt, "darkdirt");
 		GameRegistry.registerBlock(darkgrass, "darkgrass");
-		//GameRegistry.registerBlock(chest, "Chest");
 		GameRegistry.registerBlock(deployer, "deployer");
+		GameRegistry.registerBlock(furnaceIdle, "furnaceIdle");
+		GameRegistry.registerBlock(furnaceActive, "furnaceActive");
 		
 
 		
