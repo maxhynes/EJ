@@ -47,8 +47,13 @@ public class ConfigHandler {
 		ItemInfo.rubyGem_ID = config.getItem(ItemInfo.rubyGem_KEY, ItemInfo.rubyGem_DEFAULT).getInt();
 		ItemInfo.opalGem_ID = config.getItem(ItemInfo.opalGem_KEY, ItemInfo.opalGem_DEFAULT).getInt();
 		ItemInfo.zaniteGem_ID = config.getItem(ItemInfo.zaniteGem_KEY, ItemInfo.zaniteGem_DEFAULT).getInt();
-		ItemInfo.WAND_ID = config.getItem(ItemInfo.WAND_KEY, ItemInfo.WAND_DEFAULT).getInt();
+		//ItemInfo.WAND_ID = config.getItem(ItemInfo.WAND_KEY, ItemInfo.WAND_DEFAULT).getInt();
 		ItemInfo.WAND2_ID = config.getItem(ItemInfo.WAND2_KEY, ItemInfo.WAND2_DEFAULT).getInt();
+		ItemInfo.hammer_ID = config.getItem(ItemInfo.hammer_KEY, ItemInfo.hammer_DEFAULT).getInt();
+		ItemInfo.obsidianPlate_ID = config.getItem(ItemInfo.obsidianPlate_KEY, ItemInfo.obsidianPlate_DEFAULT).getInt();
+		ItemInfo.chestplatePlating_ID = config.getItem(ItemInfo.chestplatePlating_KEY, ItemInfo.chestplatePlating_DEFAULT).getInt();
+		ItemInfo.powerCore_ID = config.getItem(ItemInfo.powerCore_KEY, ItemInfo.powerCore_DEFAULT).getInt();
+		ItemInfo.shadowChestplate_ID = config.getItem(ItemInfo.shadowChestplate_KEY, ItemInfo.shadowChestplate_DEFAULT).getInt();
 		
 		ItemInfo.topazSword_ID = config.getItem(ItemInfo.topazSword_KEY, ItemInfo.topazSword_DEFAULT).getInt();
 		ItemInfo.rubySword_ID = config.getItem(ItemInfo.rubySword_KEY, ItemInfo.rubySword_DEFAULT).getInt();

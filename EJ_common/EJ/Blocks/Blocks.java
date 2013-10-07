@@ -61,8 +61,8 @@ public class Blocks {
 		darkgrass = new darkgrass(BlockInfo.blackgrass_ID);
 		darkdirt = new darkdirt(BlockInfo.blackdirt_ID);
 		deployer = new deployer(BlockInfo.deployer_ID);
-		furnaceIdle = new furnace(BlockInfo.furnaceIdle_ID, false).setUnlocalizedName("furnaceIdle").setCreativeTab(EJ.core.EJ.tabEJ);
-		furnaceActive = new furnace(BlockInfo.furnaceActive_ID, true).setUnlocalizedName("furnaceActive").setLightValue(1.0F).setCreativeTab(EJ.core.EJ.tabEJ);
+		//furnaceIdle = new furnace(BlockInfo.furnaceIdle_ID, false).setUnlocalizedName("furnaceIdle").setCreativeTab(EJ.core.EJ.tabEJ);
+		//furnaceActive = new furnace(BlockInfo.furnaceActive_ID, true).setUnlocalizedName("furnaceActive").setLightValue(1.0F).setCreativeTab(EJ.core.EJ.tabEJ);
 		
 		
 
@@ -81,8 +81,8 @@ public class Blocks {
 		GameRegistry.registerBlock(darkdirt, "darkdirt");
 		GameRegistry.registerBlock(darkgrass, "darkgrass");
 		GameRegistry.registerBlock(deployer, "deployer");
-		GameRegistry.registerBlock(furnaceIdle, "furnaceIdle");
-		GameRegistry.registerBlock(furnaceActive, "furnaceActive");
+		//GameRegistry.registerBlock(furnaceIdle, "furnaceIdle");
+		//GameRegistry.registerBlock(furnaceActive, "furnaceActive");
 		
 
 		

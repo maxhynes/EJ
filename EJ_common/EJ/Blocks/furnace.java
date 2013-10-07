@@ -1,4 +1,4 @@
-package EJ.Blocks;
+/**package EJ.Blocks;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -34,6 +34,6 @@ public class furnace extends BlockContainer {
 	public Icon getIcon(int side, int metadata) {
 		return side == metadata ? this.iconFront : this.blockIcon;
 	}
-}
+}**/
 
 

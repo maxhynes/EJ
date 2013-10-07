@@ -418,13 +418,13 @@ public class ItemInfo {
 	public static final String DROID_ICON = "droidItem";
 	
 	public static int SPIDER_ID;
-	public static final String SPIDER_KEY = "spider";
+	public static final String SPIDER_KEY = "SPIDER";
 	public static final int SPIDER_DEFAULT = 1044;
 
-	public static final String SPIDER_UNLOCALIZED_NAME = "spiderItem";
-	public static final String SPIDER_NAME = "Spawn Wither Spider";
+	public static final String SPIDER_UNLOCALIZED_NAME = "SPIDERItem";
+	public static final String SPIDER_NAME = "Spawn Wither SPIDER";
 
-	public static final String SPIDER_ICON = "spiderItem";
+	public static final String SPIDER_ICON = "SPIDERItem";
 	
 	public static int emeraldBucket_ID;
 	public static final String emeraldBucket_KEY = "emeraldBucket";
@@ -443,6 +443,62 @@ public class ItemInfo {
 	
 	public static final String minerHelmet_UNLOCALIZED_NAME = "minerHelmet";
 	public static final String minerHelmet_NAME = "Miner's Helmet";
+	
+	public static int pouch_ID;
+	public static final String pouch_KEY = "pouch";
+	public static final int pouch_DEFAULT = 1047;
+	
+	public static final String pouch_UNLOCALIZED_NAME = "pouch";
+	public static final String pouch_NAME = "Pouch";
+	
+	public static final String pouch_ICON = "pouch";
+	
+	public static int obsidianPlate_ID;
+	public static final String obsidianPlate_KEY = "obsidianPlate";
+	public static final int obsidianPlate_DEFAULT = 1048;
+
+	public static final String obsidianPlate_UNLOCALIZED_NAME = "obsidianPlate";
+	public static final String obsidianPlate_NAME = "Obsidian Plate";
+
+	public static final String obsidianPlate_ICON = "obsidianPlate";
+	
+	public static int hammer_ID;
+	public static final String hammer_KEY = "hammer";
+	public static final int hammer_DEFAULT = 1049;
+
+	public static final String hammer_UNLOCALIZED_NAME = "hammer";
+	public static final String hammer_NAME = "Hammer";
+
+	public static final String hammer_ICON = "hammer";
+	
+	public static int chestplatePlating_ID;
+	public static final String chestplatePlating_KEY = "chestplatePlating";
+	public static final int chestplatePlating_DEFAULT = 1050;
+
+	public static final String chestplatePlating_UNLOCALIZED_NAME = "chestplatePlating";
+	public static final String chestplatePlating_NAME = "chestplatePlating";
+
+	public static final String chestplatePlating_ICON = "chestplatePlating";
+	
+	public static int powerCore_ID;
+	public static final String powerCore_KEY = "powerCore";
+	public static final int powerCore_DEFAULT = 1051;
+
+	public static final String powerCore_UNLOCALIZED_NAME = "powerCore";
+	public static final String powerCore_NAME = "powerCore";
+
+	public static final String powerCore_ICON = "powerCore";
+	
+	public static int shadowChestplate_ID;
+	public static final String shadowChestplate_KEY = "shadowChestplate";
+	public static final int shadowChestplate_DEFAULT = 1052;
+
+	public static final String shadowChestplate_UNLOCALIZED_NAME = "shadowChestplate";
+	public static final String shadowChestplate_NAME = "shadowChestplate";
+
+	public static final String shadowChestplate_ICON = "shadowChestplate";
+
+	
 	
 
 

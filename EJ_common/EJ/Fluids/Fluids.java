@@ -1,5 +1,6 @@
 package EJ.Fluids;
 
+import EJ.Items.ItemInfo;
 import EJ.Items.Items;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -23,11 +24,14 @@ public class Fluids {
 	
 	public static void init() {
 		
-		emeraldFluid = new emeraldFluid();
-		BlockemeraldFluid = new BlockemeraldFluid(2000);
+		emeraldFluid = new emeraldFluid();;
+		BlockemeraldFluid = new BlockemeraldFluid(ItemInfo.emeraldBucketfull_DEFAULT);
+		
 		
 		GameRegistry.registerBlock(BlockemeraldFluid, "BlockemeraldFluid");
 		GameRegistry.addSmelting(Item.emerald.itemID, new ItemStack(Items.emeraldBucket), 0.3f);
+
+		
 
 		
 		

@@ -27,33 +27,37 @@ public class ServerTickHandler implements ITickHandler {
 		if (player.getCurrentItemOrArmor(4) != null){
 			ItemStack helmet = player.getCurrentItemOrArmor(4);
 			
-			if (helmet.getItem() == Items.rubyHelmet) {
-				player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 5, 0));
-			}
+			//if (helmet.getItem() == Items.rubyHelmet) {
+				//player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 5, 0));
+			//}
 				
 			if (helmet.getItem() == Items.miner) {
 					player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 5, 0));	
 			}
 			
-			if (helmet.getItem() == Items.opalHelmet) {
-				player.addPotionEffect(new PotionEffect(Potion.waterBreathing.getId(), 5, 0));	
-		}
+			//if (helmet.getItem() == Items.opalHelmet) {
+				//player.addPotionEffect(new PotionEffect(Potion.waterBreathing.getId(), 5, 0));	
+		//}
 		}
 		
 		if (player.getCurrentItemOrArmor(3) != null) {
 			ItemStack chestplate = player.getCurrentItemOrArmor(3);
 			
-			if (chestplate.getItem() == Items.rubyChestplate) {
-				player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 5, 0));
+			if (chestplate.getItem() == Items.shadowChestplate) {
+				player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 4, 2));
+				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 2, 2));
+				
+				
+				
 			}
 			
-			if (chestplate.getItem() == Items.opalChestplate) {
+			/**if (chestplate.getItem() == Items.opalChestplate) {
 				player.addPotionEffect(new PotionEffect(Potion.waterBreathing.getId(), 5, 0));
-			}
+			}**/
 			
 			
 		}
-		if (player.getCurrentItemOrArmor(2) != null) {
+		/**if (player.getCurrentItemOrArmor(2) != null) {
 			ItemStack leggings = player.getCurrentItemOrArmor(2);
 			
 			if (leggings.getItem() == Items.rubyLeggings) {
@@ -73,7 +77,7 @@ public class ServerTickHandler implements ITickHandler {
 			if (boots.getItem() == Items.opalBoots) {
 				player.addPotionEffect(new PotionEffect(Potion.waterBreathing.getId(), 5, 0));
 	}
-}
+}**/
 		
 	}
 

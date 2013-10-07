@@ -1,6 +1,9 @@
  package EJ.Items;
 
+import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
@@ -34,6 +37,12 @@ public class Items {
     //public static Item droid;
     public static Item spider;
     public static Item emeraldBucket;
+    public static Item pouch;
+    public static Item obsidianPlate;
+    public static Item hammer;
+    public static Item chestplatePlating;
+    public static Item powerCore;
+    public static Item shadowChestplate;
     
     
     public static Item topazSword;
@@ -104,9 +113,13 @@ public class Items {
         opalGem = new opalGem(ItemInfo.opalGem_ID);
         zaniteGem = new zaniteGem(ItemInfo.zaniteGem_ID);
         strawberry = new strawberry(ItemInfo.strawberry_ID, 2 , 0.4F, false);
-        //droid = new ItemDroid(ItemInfo.DROID_ID);
         spider = new ItemSpider(ItemInfo.SPIDER_ID);
         emeraldBucket = new emeraldFluidBucket(ItemInfo.emeraldBucket_ID);
+        //pouch = new pouch(ItemInfo.pouch_ID);
+        obsidianPlate = new obsidianPlate(ItemInfo.obsidianPlate_ID);
+        hammer = new hammer(ItemInfo.hammer_ID);
+        chestplatePlating = new chestplatePlating(ItemInfo.chestplatePlating_ID);
+        powerCore = new powerCore(ItemInfo.powerCore_ID);
         
         
         
@@ -166,6 +179,8 @@ public class Items {
         emeraldChestplate = new emeraldArmor(ItemInfo.emeraldChestplate_ID, Armoremerald, 1, 1, "emerald_body", "EMERALD").setUnlocalizedName("emeraldChestplate");
         emeraldLeggings = new emeraldArmor(ItemInfo.emeraldLeggings_ID, Armoremerald, 1, 2, "emerald_leggings", "EMERALD").setUnlocalizedName("emeraldLeggings");
         emeraldBoots = new emeraldArmor(ItemInfo.emeraldBoots_ID, Armoremerald, 1, 3, "emerald_boots", "EMERALD").setUnlocalizedName("emeraldBoots");
+        
+        shadowChestplate = new shadowArmor(ItemInfo.shadowChestplate_ID, Armoremerald, 1, 1, "shadow_body", "SHADOW").setUnlocalizedName("shadowChestplate");
         
         
         /**
@@ -237,6 +252,10 @@ public class Items {
         //LanguageRegistry.addName(droid, ItemInfo.DROID_NAME);
         LanguageRegistry.addName(spider, ItemInfo.SPIDER_NAME);
         LanguageRegistry.addName(emeraldBucket, ItemInfo.emeraldBucket_NAME);
+        LanguageRegistry.addName(obsidianPlate, ItemInfo.obsidianPlate_NAME);
+        LanguageRegistry.addName(hammer, ItemInfo.hammer_NAME);
+        LanguageRegistry.addName(chestplatePlating, ItemInfo.chestplatePlating_NAME);
+        LanguageRegistry.addName(powerCore, ItemInfo.powerCore_NAME);
         
 		
 
@@ -264,6 +283,7 @@ public class Items {
         LanguageRegistry.addName(emeraldBoots, "Emerald Boots");
         LanguageRegistry.addName(miner, "Miner's Helmet");
         
+ 
         
         
         
@@ -279,6 +299,13 @@ public class Items {
     	GameRegistry.addRecipe(new ItemStack(Wand2,1), new Object[]{
             " T ","TTT"," S ",'T',zaniteGem, 'S', Item.blazeRod });
     	
+    	GameRegistry.addRecipe(new ItemStack(chestplatePlating,1), new Object[]{
+            "T T","TST","TTT",'T',obsidianPlate, 'S', emeraldChestplate });
+    	
+    	GameRegistry.addRecipe(new ItemStack(powerCore,1), new Object[]{
+            "T T","TST","STS",'T',obsidianPlate, 'S', zaniteGem });
+    	
+    	
     	
     	
    
@@ -288,6 +315,11 @@ public class Items {
         
         GameRegistry.addRecipe(new ItemStack(Item.netherStar,1), new Object[]{
             "NSN","STS","NSN",'T', Item.emerald, 'S', Item.diamond, 'N', Item.netherrackBrick });
+        
+        GameRegistry.addRecipe(new ItemStack(hammer,1), new Object[]{
+            " S "," T ",'T', Item.stick, 'S', Block.stone});
+        
+
 
     	
         //Axes    
@@ -335,7 +367,9 @@ public class Items {
         GameRegistry.addRecipe(new ItemStack(emeraldLeggings,1), new Object[]{"TTT","T T","T T",'T',Item.emerald });        
         GameRegistry.addRecipe(new ItemStack(emeraldBoots,1), new Object[]{"T T","T T",'T',Item.emerald });
         
-        GameRegistry.addRecipe(new ItemStack(topazHelmet,1), new Object[]{" T "," S ",'T',Item.glowstone, 'S',Items.topazHelmet });
+        GameRegistry.addRecipe(new ItemStack(miner,1), new Object[]{" T "," S ",'T',Item.glowstone, 'S',Items.topazHelmet });
+        
+        GameRegistry.addShapelessRecipe(new ItemStack(obsidianPlate,9), new Object[]{hammer, Block.obsidian }); 
         
         
 

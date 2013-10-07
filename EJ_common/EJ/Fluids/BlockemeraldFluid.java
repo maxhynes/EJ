@@ -29,7 +29,6 @@ public class BlockemeraldFluid extends BlockFluidClassic{
 	 public BlockemeraldFluid(int id){
 		 super(id, Fluids.emeraldFluid, Material.water);
 		 Fluids.emeraldFluid.setBlockID(id);
-		 
 	 }
 	 
 	 
