@@ -421,10 +421,10 @@ public class ItemInfo {
 	public static final String SPIDER_KEY = "SPIDER";
 	public static final int SPIDER_DEFAULT = 1044;
 
-	public static final String SPIDER_UNLOCALIZED_NAME = "SPIDERItem";
-	public static final String SPIDER_NAME = "Spawn Wither SPIDER";
+	public static final String SPIDER_UNLOCALIZED_NAME = "spiderItem";
+	public static final String SPIDER_NAME = "Spawn Wither Spider";
 
-	public static final String SPIDER_ICON = "SPIDERItem";
+	public static final String SPIDER_ICON = "spiderItem";
 	
 	public static int emeraldBucket_ID;
 	public static final String emeraldBucket_KEY = "emeraldBucket";
@@ -476,7 +476,7 @@ public class ItemInfo {
 	public static final int chestplatePlating_DEFAULT = 1050;
 
 	public static final String chestplatePlating_UNLOCALIZED_NAME = "chestplatePlating";
-	public static final String chestplatePlating_NAME = "chestplatePlating";
+	public static final String chestplatePlating_NAME = "chestplate Plating";
 
 	public static final String chestplatePlating_ICON = "chestplatePlating";
 	
@@ -485,7 +485,7 @@ public class ItemInfo {
 	public static final int powerCore_DEFAULT = 1051;
 
 	public static final String powerCore_UNLOCALIZED_NAME = "powerCore";
-	public static final String powerCore_NAME = "powerCore";
+	public static final String powerCore_NAME = "power Core";
 
 	public static final String powerCore_ICON = "powerCore";
 	
@@ -494,9 +494,19 @@ public class ItemInfo {
 	public static final int shadowChestplate_DEFAULT = 1052;
 
 	public static final String shadowChestplate_UNLOCALIZED_NAME = "shadowChestplate";
-	public static final String shadowChestplate_NAME = "shadowChestplate";
+	public static final String shadowChestplate_NAME = "Shadow Chestplate";
 
 	public static final String shadowChestplate_ICON = "shadowChestplate";
+	
+	public static int wrench_ID;
+	public static final String wrench_KEY = "wrench";
+	public static final int wrench_DEFAULT = 1053;
+
+	public static final String wrench_UNLOCALIZED_NAME = "wrench";
+	public static final String wrench_NAME = "Wrench";
+
+	public static final String wrench_ICON = "wrench";
+
 
 	
 	

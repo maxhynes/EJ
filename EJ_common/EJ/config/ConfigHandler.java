@@ -54,6 +54,7 @@ public class ConfigHandler {
 		ItemInfo.chestplatePlating_ID = config.getItem(ItemInfo.chestplatePlating_KEY, ItemInfo.chestplatePlating_DEFAULT).getInt();
 		ItemInfo.powerCore_ID = config.getItem(ItemInfo.powerCore_KEY, ItemInfo.powerCore_DEFAULT).getInt();
 		ItemInfo.shadowChestplate_ID = config.getItem(ItemInfo.shadowChestplate_KEY, ItemInfo.shadowChestplate_DEFAULT).getInt();
+		ItemInfo.wrench_ID = config.getItem(ItemInfo.wrench_KEY, ItemInfo.wrench_DEFAULT).getInt();
 		
 		ItemInfo.topazSword_ID = config.getItem(ItemInfo.topazSword_KEY, ItemInfo.topazSword_DEFAULT).getInt();
 		ItemInfo.rubySword_ID = config.getItem(ItemInfo.rubySword_KEY, ItemInfo.rubySword_DEFAULT).getInt();

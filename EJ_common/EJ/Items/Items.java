@@ -34,7 +34,6 @@ public class Items {
     public static Item zaniteGem;
     public static Item Wand;
     public static Item Wand2;
-    //public static Item droid;
     public static Item spider;
     public static Item emeraldBucket;
     public static Item pouch;
@@ -84,6 +83,8 @@ public class Items {
     public static Item strawberry;
     public static Item miner;
     public static ItemStack rubySwordStack;
+    public static Item wrench;
+    
     
     
     public static EnumToolMaterial tooltopaz = EnumHelper.addToolMaterial("TOPAZ", 3, 500, 8.0F, 3, 10);
@@ -120,6 +121,8 @@ public class Items {
         hammer = new hammer(ItemInfo.hammer_ID);
         chestplatePlating = new chestplatePlating(ItemInfo.chestplatePlating_ID);
         powerCore = new powerCore(ItemInfo.powerCore_ID);
+        wrench = new ItemWrench(ItemInfo.wrench_ID);
+        
         
         
         
@@ -249,13 +252,14 @@ public class Items {
         LanguageRegistry.addName(opalHoe, ItemInfo.opalHoe_NAME);
         LanguageRegistry.addName(emeraldHoe, ItemInfo.emeraldHoe_NAME);
         LanguageRegistry.addName(strawberry, ItemInfo.strawberry_NAME);
-        //LanguageRegistry.addName(droid, ItemInfo.DROID_NAME);
         LanguageRegistry.addName(spider, ItemInfo.SPIDER_NAME);
         LanguageRegistry.addName(emeraldBucket, ItemInfo.emeraldBucket_NAME);
         LanguageRegistry.addName(obsidianPlate, ItemInfo.obsidianPlate_NAME);
         LanguageRegistry.addName(hammer, ItemInfo.hammer_NAME);
         LanguageRegistry.addName(chestplatePlating, ItemInfo.chestplatePlating_NAME);
         LanguageRegistry.addName(powerCore, ItemInfo.powerCore_NAME);
+        LanguageRegistry.addName(shadowChestplate, ItemInfo.shadowChestplate_NAME);
+        LanguageRegistry.addName(wrench, ItemInfo.wrench_NAME);
         
 		
 
@@ -317,7 +321,10 @@ public class Items {
             "NSN","STS","NSN",'T', Item.emerald, 'S', Item.diamond, 'N', Item.netherrackBrick });
         
         GameRegistry.addRecipe(new ItemStack(hammer,1), new Object[]{
-            " S "," T ",'T', Item.stick, 'S', Block.stone});
+            "SSS"," T ",'T', Item.stick, 'S', Block.stone});
+        
+        GameRegistry.addRecipe(new ItemStack(wrench,1), new Object[]{
+            "S S"," T ",'T', hammer, 'S', Block.stone});
         
 
 
