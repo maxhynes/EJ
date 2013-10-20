@@ -39,6 +39,7 @@ public class ConfigHandler {
 		BlockInfo.blackgrass_ID = config.getBlock(BlockInfo.blackgrass_KEY, BlockInfo.blackgrass_DEFAULT).getInt();
 		BlockInfo.blackdirt_ID = config.getBlock(BlockInfo.blackdirt_KEY, BlockInfo.blackdirt_DEFAULT).getInt();
 		BlockInfo.deployer_ID = config.getBlock(BlockInfo.deployer_KEY, BlockInfo.deployer_DEFAULT).getInt();
+		BlockInfo.fence_ID = config.getBlock(BlockInfo.fence_KEY, BlockInfo.fence_DEFAULT).getInt();
 		
 		
 		

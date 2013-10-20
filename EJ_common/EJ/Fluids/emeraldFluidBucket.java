@@ -35,6 +35,7 @@ public class emeraldFluidBucket extends ItemFluidContainer{
 		 isFull = 2000;
 		 setCreativeTab(EJ.core.EJ.tabEJ);
 		 
+		 
 	 }
 	 @Override
 	 public ItemStack onItemRightClick(ItemStack item, World world,

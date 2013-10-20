@@ -116,7 +116,7 @@ public class Items {
         strawberry = new strawberry(ItemInfo.strawberry_ID, 2 , 0.4F, false);
         spider = new ItemSpider(ItemInfo.SPIDER_ID);
         emeraldBucket = new emeraldFluidBucket(ItemInfo.emeraldBucket_ID);
-        //pouch = new pouch(ItemInfo.pouch_ID);
+        pouch = new pouch(ItemInfo.pouch_ID);
         obsidianPlate = new obsidianPlate(ItemInfo.obsidianPlate_ID);
         hammer = new hammer(ItemInfo.hammer_ID);
         chestplatePlating = new chestplatePlating(ItemInfo.chestplatePlating_ID);
@@ -213,6 +213,8 @@ public class Items {
         
         rubySwordStack = new ItemStack(rubySword);        
         rubySwordStack.addEnchantment(Enchantment.fireAspect, 1);
+        
+        
         		
 
 

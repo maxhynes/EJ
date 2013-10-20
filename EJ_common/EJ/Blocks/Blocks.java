@@ -2,6 +2,8 @@ package EJ.Blocks;
 
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFence;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import EJ.Items.Items;
 import EJ.tileentities.TileEntityDeployer;
@@ -39,6 +41,7 @@ public class Blocks {
 	public static Block deployer;
 	public static Block furnaceIdle;
 	public static Block furnaceActive;
+	public static Block fence;
 
 
 	
@@ -61,6 +64,7 @@ public class Blocks {
 		darkgrass = new darkgrass(BlockInfo.blackgrass_ID);
 		darkdirt = new darkdirt(BlockInfo.blackdirt_ID);
 		deployer = new deployer(BlockInfo.deployer_ID);
+		fence = new fence(BlockInfo.fence_ID, "ej:rubyBlock", Material.iron).setHardness(3F).setUnlocalizedName("fence");
 		//furnaceIdle = new furnace(BlockInfo.furnaceIdle_ID, false).setUnlocalizedName("furnaceIdle").setCreativeTab(EJ.core.EJ.tabEJ);
 		//furnaceActive = new furnace(BlockInfo.furnaceActive_ID, true).setUnlocalizedName("furnaceActive").setLightValue(1.0F).setCreativeTab(EJ.core.EJ.tabEJ);
 		
@@ -81,6 +85,7 @@ public class Blocks {
 		GameRegistry.registerBlock(darkdirt, "darkdirt");
 		GameRegistry.registerBlock(darkgrass, "darkgrass");
 		GameRegistry.registerBlock(deployer, "deployer");
+		GameRegistry.registerBlock(fence, "fence");
 		//GameRegistry.registerBlock(furnaceIdle, "furnaceIdle");
 		//GameRegistry.registerBlock(furnaceActive, "furnaceActive");
 		

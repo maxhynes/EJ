@@ -28,7 +28,12 @@ public class GuiHandler implements IGuiHandler {
 			int x, int y, int z) {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 		
-		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new ContainerDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}default:return null;}}
+		switch(id) {
+		default:return null;
+			case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new ContainerDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}
+			case 1: return new Containerpouch(player);
+			}
+		}
 	
 	    
 		
@@ -45,7 +50,10 @@ public class GuiHandler implements IGuiHandler {
 			int x, int y, int z) {
 		TileEntity entity = world.getBlockTileEntity(x, y, z);
 		
-		switch(id) {case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new GuiDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}default:return null;}}}
+		switch(id) {
+			default:return null;
+			case 0:if(entity != null && entity instanceof TileEntityDeployer) {return new GuiDeployer(player.inventory, (TileEntityDeployer) entity);}else {return null;}
+			case 1: return new Guipouch(player);}}}
 		
 
 	

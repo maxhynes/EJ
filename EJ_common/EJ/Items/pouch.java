@@ -43,6 +43,7 @@ public class pouch extends Item {
         @Override
         public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) 
         {
+        	player.openGui(EJ.core.EJ.instance, 1, world, (int)player.posX, (int)player.posY, (int)player.posZ);
         	
         	return itemStack;
 

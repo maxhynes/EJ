@@ -20,6 +20,7 @@ import EJ.entity.WitherSpider;
 import EJ.lib.Reference;
 import EJ.proxy.CommonProxy;
 import EJ.world.GenerationHandler;
+import EJ.world.Biomes.Biomes;
 //import com.jadarstudios.developercapes.DevCapesUtil;
 
 import cpw.mods.fml.common.Mod;

@@ -113,7 +113,7 @@ public class BlockInfo {
 	
 	public static int blackgrass_ID;
 	public static final String blackgrass_KEY = "blackgrass";
-	public static final int blackgrass_DEFAULT = 510;
+	public static final int blackgrass_DEFAULT = 520;
 	
 	public static final String blackgrass_UNLOCALIZED_NAME = "blackgrass";
 	public static final String blackgrass_NAME = "Dark Grass (WIP)";
@@ -124,7 +124,7 @@ public class BlockInfo {
 	
 	public static int blackdirt_ID;
 	public static final String blackdirt_KEY = "blackdirt";
-	public static final int blackdirt_DEFAULT = 511;
+	public static final int blackdirt_DEFAULT = 221;
 	
 	public static final String blackdirt_UNLOCALIZED_NAME = "blackdirt";
 	public static final String blackdirt_NAME = "Dark Dirt (WIP)";
@@ -175,6 +175,14 @@ public class BlockInfo {
 	
 	public static final String deployer_SIDE = "deployer";
 	
+	public static int fence_ID;
+	public static final String fence_KEY = "fence";
+	public static final int fence_DEFAULT = 517;
+	
+	public static final String fence_UNLOCALIZED_NAME = "fence";
+	public static final String fence_NAME = "fence";
+	
+	public static final String fence_SIDE = "fence";
 
 	
 
