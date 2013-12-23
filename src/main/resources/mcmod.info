@@ -1,0 +1,21 @@
+[
+{
+  "modid": "EJ",
+  "name": "Explorer's Journey",
+  "description": "The Explorer's Journey mod by Brenwwe",
+  "version": "0.1.0",
+  "url": "www.github.com/Brenwwe/EJ",
+  "updateUrl": "https://mc-building.ca/mods/Update/mirror/..",
+  "authorList": [
+    "Brenwwe"
+	"Shadownija"
+  ],
+  "credits": "All of you Awesome modders out there!",
+  "logoFile": "src\man\resources\assets\ej\Logo.png"
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
