@@ -46,7 +46,7 @@ public class TileEntityDeployer extends TileEntity implements IInventory  {
 	@Override
 	public String getInvName() {
 		
-		return "Deployer";
+		return "Mechanical Deployer";
 	}
 
 	@Override
@@ -58,7 +58,7 @@ public class TileEntityDeployer extends TileEntity implements IInventory  {
 	@Override
 	public int getInventoryStackLimit() {
 		
-		return 64;
+		return 16;
 	}
 
 	@Override
